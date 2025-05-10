@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toán tử 3 ngôi</title>
+  </head>
+  <body>
+    <script>
+      // biến = biểu thức 1 ? biểu thức 2 : biểu thức 3
+      // nếu bthuc 1 true thì sẽ lấy bthuc 2 gán cho biến
+      // còn nếu bthuc 1 false thì sẽ lấy bthuc 3 gán cho biến
+      // let number = Number(prompt("Nhập vào số bất kỳ: "));
+      // let message = number >= 0 ? "Số dương" : "Số âm";
+      // console.log(message);
+
+      // Bài tập vận dụng
+      let score = parseFloat(prompt("Nhập vào điểm: "));
+      let result =
+        score >= 8
+          ? "Giỏi"
+          : score < 8 && score >= 6.5
+          ? "Khá"
+          : score < 6.5 && score >= 5
+          ? "Trung bình"
+          : score < 5
+          ? "Yếu"
+          : "Điểm không hợp lệ";
+      console.log(result);
+      console.log(typeof result);
+
+      // bài tập vận dụng 2
+      // cú pháp // điều kiện ? biểu thức 1 :
+      let number = Number(prompt("Nhập vào số bất kỳ: "));
+      let point =
+        number >= 80 ? "A" : number >= 65 ? "B" : number >= 50 ? "C" : "F";
+      console.log(point);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giải bài tập</title>
+  </head>
+  <body>
+    <script>
+      // Bài 1: function tính n giai thừa
+      // 4! = 4 * 3 * 2 * 1
+      function tinhGiaiThuaFor(n) {
+        let gt = 1;
+        for (let i = 1; i <= n; i++) {
+          gt *= i;
+        }
+        return gt;
+      }
+
+      let n = Number(prompt("Nhập số nguyên dương n: "));
+      while (!Number.isInteger(n) || n <= 0) {
+        n = Number(prompt("Nhập lại số nguyên dương n: "));
+      }
+      let ketQuaFor = tinhGiaiThuaFor(n);
+      console.log(ketQuaFor);
+    </script>
+  </body>
+</html>

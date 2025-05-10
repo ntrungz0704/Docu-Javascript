@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài tập JS</title>
+  </head>
+  <body>
+    <script>
+      // tính tổng chẵn
+      /*let a = parseInt(prompt("Nhập số nguyên a: "));
+      let sum = 0;
+      for (let i = 0; i <= a; i += 2) {
+        if (i % 2 !== 0) {
+          continue;
+        } else {
+          console.log(i);
+          sum += i;
+        }
+      }
+      console.log(`Kết quả là : ${sum}`);*/
+
+      // Số nguyên tố
+      while (true) {
+        let a = Number(prompt("Nhập số nguyên dương: "));
+        while (!Number.isInteger(a) || a <= 0) {
+          a = Number(prompt("Nhập lại số nguyên dương: "));
+        }
+      }
+    </script>
+  </body>
+</html>

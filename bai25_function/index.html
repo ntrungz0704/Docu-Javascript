@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      // 1) Khai báo hàm tường minh có function và tên hàm đầy đủ Function Deeclaration
+      // B1 khai báo hàm
+      function tenFunction() {
+        // Mã lệnh thực hiện 1 nhiệm vụ nào đó
+        console.log("Hello world!");
+        // Hoặc return về giá trị nào đó
+      }
+
+      // B2 gọi hàm
+      tenFunction(); // Gọi hàm để thực hiện nhiệm vụ
+
+      // 2) Khai báo truyển biến và đối số ko gọi tên hàm Function Expression
+      // B1 khai báo biến
+
+      let tong = function (a, b) {
+        return a + b;
+        // mã lệnh thực hiện 1 nhiệm vụ nào đó
+      };
+
+      // B2 gọi hàm
+      let result = tong(5, 10);
+      console.log(`Kết quả của tổng a và b là: ${result}`);
+    </script>
+  </body>
+</html>

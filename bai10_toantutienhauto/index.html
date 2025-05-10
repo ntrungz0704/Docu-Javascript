@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toán tử tiền tố hậu tố</title>
+  </head>
+  <body>
+    <script>
+      // Toán tử tiền hố và hậu tố
+
+      // Với phép tính đơn lẻ chỉ 1 phép tình thì ++ || -- ở trước hay sau là như nhau
+      // let a = 99;
+      // let b = 10;
+      // let c = 77;
+      // let d = 88;
+      // a++;
+      // b--;
+      // ++c;
+      // --d;
+
+      // // Kết quả
+      // console.log(a);
+      // console.log(b);
+      // console.log(c);
+      // console.log(d);
+
+      // Quy tắc viết ++ || --
+      /*
+        a++, a-- : viết sau biến => hậu tố ( postfix )
+        ++a, --a : viết trước biến => tiền tố ( prefix )
+      */
+
+      // Ưu tiên tính toán trong post, pre
+      /*
+        step1 : prefix
+        step2 : các phép tính còn lại
+        step3: gán giá trị cho biến ở bên trái dấu "="
+        step4: tính postfix
+      */
+
+      // let x = 1,
+      //   y = 2,
+      //   z = x++ - ++y + 1;
+
+      // console.log(x);
+      // console.log(y);
+      // console.log(z);
+
+      //Bài tập
+      // tính chu vi, diện tích HCN
+      let a = parseFloat(prompt("Nhập chiều dài HCN: "));
+      let b = parseFloat(prompt("Nhập chiều rộng HCN: "));
+      let s = a * b;
+      let p = (a + b) * 2;
+      console.log(`Diện tích HCN: ${s}`);
+      console.log(`Chu vi HCN: ${p}`);
+    </script>
+  </body>
+</html>

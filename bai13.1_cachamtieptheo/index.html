@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Các hàm tiếp theo</title>
+  </head>
+  <body>
+    <script>
+      // Hàm Number()
+      // Chuyển đổi kiểu dữ liệu về kiểu số /// nếu ko chuyển được thì -> NaN(Not a Number)
+      //Ví dụ
+      let a = "123.45"; // kiểu chuỗi
+      console.log(Number(a)); // trả về kiểu chuỗi khi biến đó có thể trả về được
+
+      let b = "abc"; // kiểu chuỗi
+      console.log(Number(b)); // trả về NaN vì abc ko chuyển thành số được
+
+      // Hàm isNaN() ko phải là số hoặc ko chuyển được về số
+      // nghĩa là dùng hàm này nó sẽ thử chuyển đổi kiểu dữ liệu về số nếu ko chuyển được thì "true" và ngược lại
+      console.log(isNaN("123")); // false bởi vì có thể chuyển 123 -> số
+      console.log(isNaN("123abc")); // true bởi vì có thể chuyển 123abc thành số -> NaN
+      console.log("abc" / "dfe"); // sẽ ra NaN vì chia ko phải số
+    </script>
+  </body>
+</html>
