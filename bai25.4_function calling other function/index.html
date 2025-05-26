@@ -25,6 +25,22 @@
 
       let result = tongTich(2, 3, 4);
       console.log(result);
+
+      function tinhTongTien(gia, soLuong) {
+        return gia * soLuong;
+      }
+
+      function tinhGiamGia(tongTien, phanTramGiamGia) {
+        return (tongTien * phanTramGiamGia) / 100;
+      }
+
+      function thanhTien(gia, soLuong, phanTramGiamGia) {
+        let tongTien = tinhTongTien(gia, soLuong);
+        let giamGia = tinhGiamGia(tongTien, phanTramGiamGia);
+        return tongTien - giamGia;
+      }
+
+      console.log(thanhTien(10000, 5, 10));
     </script>
   </body>
 </html>

@@ -9,20 +9,39 @@
     <script>
       // Bài 1: function tính n giai thừa
       // 4! = 4 * 3 * 2 * 1
-      function tinhGiaiThuaFor(n) {
-        let gt = 1;
-        for (let i = 1; i <= n; i++) {
-          gt *= i;
-        }
-        return gt;
-      }
+      // function tinhGiaiThuaFor(n) {
+      //   let gt = 1;
+      //   for (let i = 1; i <= n; i++) {
+      //     gt *= i;
+      //   }
+      //   return gt;
+      // }
 
-      let n = Number(prompt("Nhập số nguyên dương n: "));
-      while (!Number.isInteger(n) || n <= 0) {
-        n = Number(prompt("Nhập lại số nguyên dương n: "));
+      // let n = Number(prompt("Nhập số nguyên dương n: "));
+      // while (!Number.isInteger(n) || n <= 0) {
+      //   n = Number(prompt("Nhập lại số nguyên dương n: "));
+      // }
+      // let ketQuaFor = tinhGiaiThuaFor(n);
+      // console.log(ketQuaFor);
+
+      // Bài tập JS 23 ptb2
+      function ptb2_1(a, b, c) {
+        // Tính delta
+        let delta = b ** 2 - 4 * a * c;
+
+        // ktra delta
+        if (delta > 0) {
+          let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          console.log("Phương trình có 2 nghiệm phân biệt:" + x1 + "và " + x2);
+        } else if (delta === 0) {
+          let x1 = -b / (2 * a);
+          console.log("Phương trình có nghiệm kép x1 =" + x1);
+        } else {
+          console.log("Phương trình vô nghiệm");
+        }
       }
-      let ketQuaFor = tinhGiaiThuaFor(n);
-      console.log(ketQuaFor);
+      ptb2_1(1, 1, 1);
     </script>
   </body>
 </html>
